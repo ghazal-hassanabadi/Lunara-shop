@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #F7F1EB;
+  --color-wine: #641E2A;
+  --color-ink: #302321;
+  --color-sand: #DED1C7;
+}
