@@ -6,3 +6,6 @@
   --color-ink: #302321;
   --color-sand: #DED1C7;
 }
+@theme {
+  --font-sans: "Cairo", sans-serif;
+}
