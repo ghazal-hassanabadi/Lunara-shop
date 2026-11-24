@@ -31,7 +31,7 @@
       <i class="fa-solid fa-bars"></i>
     </button>
 
-    <nav class="order-last hidden w-full lg:order-none lg:block lg:w-auto" aria-label="منوی اصلی">
+    <nav class="order-last hidden w-full lg:order-0 lg:block lg:w-auto" aria-label="منوی اصلی">
       <ul class="flex flex-col gap-3 text-sm font-medium lg:flex-row lg:items-center lg:gap-6">
         <li><a href="home.html" class="hover:text-wine">صفحه اصلی </a></li>
         <li><a href="product.html" class="border-b-2 border-wine pb-1 text-wine hover:text-ink" aria-current="page">محصولات</a></li>
@@ -40,11 +40,11 @@
       </ul>
     </nav>
 
-    <form role="search" class="group relative order-last w-full lg:order-none lg:ms-auto lg:w-72">
+    <form role="search" class="group relative order-last w-full lg:order-0 lg:ms-auto lg:w-72">
       <label for="search" class="sr-only">جستجو در محصولات</label>
       <input id="search" type="search" placeholder="جستجو در محصولات..."
         class="w-full rounded-xl bg-sand/60 py-2.5 pe-4 ps-11 text-sm placeholder:text-ink/50 hover:bg-sand focus:bg-white focus:outline-2 focus:outline-wine">
-      <button type="submit" class="absolute start-3 top-1/2 -translate-y-1/2 hover:text-wine" aria-label="جستجو">
+      <button type="submit" class="absolute inset-s-3 top-1/2 -translate-y-1/2 hover:text-wine" aria-label="جستجو">
         <i class="fa-solid fa-magnifying-glass"></i>
       </button>
     </form>
@@ -56,7 +56,7 @@
         <a href="#" class="relative hover:text-wine" aria-label="سبد خرید">
           <i class="fa-solid fa-bag-shopping"></i>
           <span id="cart-count"
-            class="absolute -end-2 -top-2 grid size-4 place-items-center rounded-full bg-wine text-[10px] text-white">0</span>
+            class="absolute -inset-e-2 -top-2 grid size-4 place-items-center rounded-full bg-wine text-[10px] text-white">0</span>
         </a>
       </li>
     </ul>

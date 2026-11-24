@@ -31,7 +31,7 @@
       <i class="fa-solid fa-bars"></i>
     </button>
 
-    <nav class="order-last hidden w-full lg:order-none lg:block lg:w-auto" aria-label="منوی اصلی">
+    <nav class="order-last hidden w-full lg:order-0 lg:block lg:w-auto" aria-label="منوی اصلی">
       <ul class="flex flex-col gap-3 text-sm font-medium lg:flex-row lg:items-center lg:gap-6">
         <li><a href="index.html" class="border-b-2 border-wine pb-1 text-wine hover:text-ink" aria-current="page">صفحه اصلی</a></li>
         <li><a href="product.html" class="hover:text-wine">محصولات</a></li>
@@ -40,11 +40,11 @@
       </ul>
     </nav>
 
-    <form role="search" class="group relative order-last w-full lg:order-none lg:ms-auto lg:w-72">
+    <form role="search" class="group relative order-last w-full lg:order-0 lg:ms-auto lg:w-72">
       <label for="search" class="sr-only">جستجو در محصولات</label>
       <input id="search" type="search" placeholder="جستجو در محصولات..."
         class="w-full rounded-xl bg-sand/60 py-2.5 pe-4 ps-11 text-sm placeholder:text-ink/50 hover:bg-sand focus:bg-white focus:outline-2 focus:outline-wine">
-      <button type="submit" class="absolute start-3 top-1/2 -translate-y-1/2 hover:text-wine" aria-label="جستجو">
+      <button type="submit" class="absolute inset-s-3 top-1/2 -translate-y-1/2 hover:text-wine" aria-label="جستجو">
         <i class="fa-solid fa-magnifying-glass"></i>
       </button>
     </form>
@@ -56,7 +56,7 @@
         <a href="#" class="relative hover:text-wine" aria-label="سبد خرید">
           <i class="fa-solid fa-bag-shopping"></i>
           <span id="cart-count"
-            class="absolute -end-2 -top-2 grid size-4 place-items-center rounded-full bg-wine text-[10px] text-white">0</span>
+            class="absolute -inset-e-2 -top-2 grid size-4 place-items-center rounded-full bg-wine text-[10px] text-white">0</span>
         </a>
       </li>
     </ul>
@@ -65,7 +65,7 @@
   <main class="mx-auto max-w-7xl space-y-10 px-4 pb-10 lg:px-6">
 
 <!-- اسلایدر اصلی -->
-<section data-slider aria-label="معرفی مجموعه" class="relative isolate flex aspect-[4/3] items-center justify-center overflow-hidden rounded-3xl bg-sand sm:aspect-auto sm:min-h-80 sm:justify-start lg:min-h-120">
+<section data-slider aria-label="معرفی مجموعه" class="relative isolate flex aspect-4/3 items-center justify-center overflow-hidden rounded-3xl bg-sand sm:aspect-auto sm:min-h-80 sm:justify-start lg:min-h-120">
   <img data-slide-image src="images/hero.png" alt="مدل با بافت زرشکی"
   class="absolute inset-0 -z-10 size-full object-cover object-[38%_center] opacity-25 sm:object-left sm:opacity-100">
 
@@ -80,7 +80,7 @@
     </a>
   </hgroup>
 
-  <ul class="absolute bottom-4 start-1/2 hidden -translate-x-1/2 gap-3 sm:bottom-5 sm:flex" aria-label="اسلایدها">
+  <ul class="absolute bottom-4 inset-s-1/2 hidden -translate-x-1/2 gap-3 sm:bottom-5 sm:flex" aria-label="اسلایدها">
     <li><button type="button" data-slide-dot class="size-3 rounded-full border border-wine bg-wine hover:bg-ink" aria-label="اسلاید ۱"></button></li>
     <li><button type="button" data-slide-dot class="size-3 rounded-full border border-wine hover:bg-wine" aria-label="اسلاید ۲"></button></li>
     <li><button type="button" data-slide-dot class="size-3 rounded-full border border-wine hover:bg-wine" aria-label="اسلاید ۳"></button></li>
@@ -93,31 +93,31 @@
   <h2 id="categories-title" class="sr-only">دسته‌بندی‌ها</h2>
   <ul class="mx-auto grid max-w-md grid-cols-2 gap-4 md:max-w-none md:grid-cols-5 md:gap-6 lg:gap-10">
     <li>
-      <a href="#" class="group flex aspect-[3/4] w-full flex-col items-center gap-2 rounded-t-full rounded-b-3xl bg-sand px-3 pb-4 pt-12 text-sm font-bold transition duration-500 ease-out hover:-translate-y-1 hover:bg-wine hover:text-white hover:shadow-lg lg:pt-16 lg:text-base">
+      <a href="#" class="group flex aspect-3/4 w-full flex-col items-center gap-2 rounded-t-full rounded-b-3xl bg-sand px-3 pb-4 pt-12 text-sm font-bold transition duration-500 ease-out hover:-translate-y-1 hover:bg-wine hover:text-white hover:shadow-lg lg:pt-16 lg:text-base">
         <img src="images/c-3.png" alt="" class="min-h-0 w-full flex-1 object-contain transition duration-500 group-hover:scale-105">
         پالتو
       </a>
     </li>
     <li class="hidden md:block">
-      <a href="#" class="group flex aspect-[3/4] w-full flex-col items-center gap-2 rounded-t-full rounded-b-3xl bg-sand px-3 pb-4 pt-12 text-sm font-bold transition duration-500 ease-out hover:-translate-y-1 hover:bg-wine hover:text-white hover:shadow-lg lg:pt-16 lg:text-base">
+      <a href="#" class="group flex aspect-3/4 w-full flex-col items-center gap-2 rounded-t-full rounded-b-3xl bg-sand px-3 pb-4 pt-12 text-sm font-bold transition duration-500 ease-out hover:-translate-y-1 hover:bg-wine hover:text-white hover:shadow-lg lg:pt-16 lg:text-base">
         <img src="images/c-5.png" alt="" class="min-h-0 w-full flex-1 object-contain transition duration-500 group-hover:scale-105">
         بارانی
       </a>
     </li>
     <li>
-      <a href="#" class="group flex aspect-[3/4] w-full flex-col items-center gap-2 rounded-t-full rounded-b-3xl bg-sand px-3 pb-4 pt-12 text-sm font-bold transition duration-500 ease-out hover:-translate-y-1 hover:bg-wine hover:text-white hover:shadow-lg lg:pt-16 lg:text-base">
+      <a href="#" class="group flex aspect-3/4 w-full flex-col items-center gap-2 rounded-t-full rounded-b-3xl bg-sand px-3 pb-4 pt-12 text-sm font-bold transition duration-500 ease-out hover:-translate-y-1 hover:bg-wine hover:text-white hover:shadow-lg lg:pt-16 lg:text-base">
         <img src="images/c-2.png" alt="" class="min-h-0 w-full flex-1 object-contain transition duration-500 group-hover:scale-105">
         هودی
       </a>
     </li>
     <li>
-      <a href="#" class="group flex aspect-[3/4] w-full flex-col items-center gap-2 rounded-t-full rounded-b-3xl bg-sand px-3 pb-4 pt-12 text-sm font-bold transition duration-500 ease-out hover:-translate-y-1 hover:bg-wine hover:text-white hover:shadow-lg lg:pt-16 lg:text-base">
+      <a href="#" class="group flex aspect-3/4 w-full flex-col items-center gap-2 rounded-t-full rounded-b-3xl bg-sand px-3 pb-4 pt-12 text-sm font-bold transition duration-500 ease-out hover:-translate-y-1 hover:bg-wine hover:text-white hover:shadow-lg lg:pt-16 lg:text-base">
         <img src="images/c-1.png" alt="" class="min-h-0 w-full flex-1 object-contain transition duration-500 group-hover:scale-105">
         بافت
       </a>
     </li>
     <li>
-      <a href="#" class="group flex aspect-[3/4] w-full flex-col items-center gap-2 rounded-t-full rounded-b-3xl bg-sand px-3 pb-4 pt-12 text-sm font-bold transition duration-500 ease-out hover:-translate-y-1 hover:bg-wine hover:text-white hover:shadow-lg lg:pt-16 lg:text-base">
+      <a href="#" class="group flex aspect-3/4 w-full flex-col items-center gap-2 rounded-t-full rounded-b-3xl bg-sand px-3 pb-4 pt-12 text-sm font-bold transition duration-500 ease-out hover:-translate-y-1 hover:bg-wine hover:text-white hover:shadow-lg lg:pt-16 lg:text-base">
         <img src="images/c-4.png" alt="" class="min-h-0 w-full flex-1 object-contain transition duration-500 group-hover:scale-105">
         شلوار
       </a>
@@ -183,81 +183,7 @@
         </li>
       </ul>
     </section>
-<!---->
-<!-- نظر مشتریان -->
- <!--
-<section aria-labelledby="reviews-title" class="rounded-2xl bg-sand/60 px-4 py-8 sm:px-8">
-  <header class="mb-6 text-center">
-    <h2 id="reviews-title" class="text-xl font-extrabold">نظر مشتریان ما</h2>
-    <p class="mt-1 text-sm text-ink/70">تجربه‌ی کسانی که از لونارا خرید کرده‌اند</p>
-  </header>
 
-  <ul class="grid grid-cols-1 gap-4 md:grid-cols-3">
-    <li>
-      <figure class="flex h-full flex-col gap-4 rounded-2xl bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-        <p class="flex gap-1 text-sm text-wine" aria-label="امتیاز ۵ از ۵">
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-        </p>
-        <blockquote class="text-sm leading-7">
-          <p>پالتو دقیقاً همان‌طور بود که در عکس دیدم. جنسش عالی است و ارسال هم خیلی سریع انجام شد.</p>
-        </blockquote>
-        <figcaption class="mt-auto flex items-center gap-3 border-t border-sand pt-4">
-          <span class="grid size-10 shrink-0 place-items-center rounded-full bg-sand text-wine">
-            <i class="fa-solid fa-user"></i>
-          </span>
-          <cite class="text-sm font-bold not-italic">سارا محمدی
-            <small class="block font-normal text-ink/60">خریدار پالتو کتی کلاسیک</small>
-          </cite>
-        </figcaption>
-      </figure>
-    </li>
-
-    <li>
-      <figure class="flex h-full flex-col gap-4 rounded-2xl bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-        <p class="flex gap-1 text-sm text-wine" aria-label="امتیاز ۵ از ۵">
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-        </p>
-        <blockquote class="text-sm leading-7">
-          <p>بافت خیلی نرم و گرم است و سایز هم کاملاً درست بود. حتماً دوباره از اینجا خرید می‌کنم.</p>
-        </blockquote>
-        <figcaption class="mt-auto flex items-center gap-3 border-t border-sand pt-4">
-          <span class="grid size-10 shrink-0 place-items-center rounded-full bg-sand text-wine">
-            <i class="fa-solid fa-user"></i>
-          </span>
-          <cite class="text-sm font-bold not-italic">نگار رضایی
-            <small class="block font-normal text-ink/60">خریدار بافت یقه‌دلار</small>
-          </cite>
-        </figcaption>
-      </figure>
-    </li>
-
-    <li>
-      <figure class="flex h-full flex-col gap-4 rounded-2xl bg-white p-5 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
-        <p class="flex gap-1 text-sm text-wine" aria-label="امتیاز ۴ از ۵">
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
-        </p>
-        <blockquote class="text-sm leading-7">
-          <p>بسته‌بندی تمیز بود و پشتیبانی سریع جواب داد. هودی هم برای زمستان خیلی خوب است.</p>
-        </blockquote>
-        <figcaption class="mt-auto flex items-center gap-3 border-t border-sand pt-4">
-          <span class="grid size-10 shrink-0 place-items-center rounded-full bg-sand text-wine">
-            <i class="fa-solid fa-user"></i>
-          </span>
-          <cite class="text-sm font-bold not-italic">مریم احمدی
-            <small class="block font-normal text-ink/60">خریدار هودی فوتر ساده</small>
-          </cite>
-        </figcaption>
-      </figure>
-    </li>
-  </ul>
-  <div class="mt-6 text-center">
-  <a href="#" class="inline-flex items-center gap-2 rounded-full border border-wine px-6 py-2.5 text-sm font-medium text-wine hover:bg-wine hover:text-white active:scale-95">
-    مشاهده همه نظرها
-    <i class="fa-solid fa-arrow-left"></i>
-  </a>
-</div>
-</section>
--->
 <!-- اینستاگرام -->
 <section aria-labelledby="insta-title" class="rounded-2xl bg-sand p-4 sm:p-6">
   <header class="mb-4 flex flex-col items-center gap-3 text-center sm:flex-row sm:justify-between sm:text-start">
@@ -280,7 +206,7 @@
   <ul class="grid grid-cols-4 gap-2 sm:gap-3">
     <li>
       <a href="#" class="group relative block overflow-hidden rounded-xl" aria-label="مشاهده پست در اینستاگرام">
-        <img src="images/m-8.jpeg" alt="" class="aspect-square w-full object-cover object-top transition duration-500 group-hover:scale-110 sm:aspect-[4/3] lg:aspect-[3/2]">
+        <img src="images/m-8.jpeg" alt="" class="aspect-square w-full object-cover object-top transition duration-500 group-hover:scale-110 sm:aspect-4/3 lg:aspect-3/2">
         <span class="absolute inset-0 grid place-items-center bg-wine/60 text-2xl text-white opacity-0 transition duration-300 group-hover:opacity-100">
           <i class="fa-brands fa-instagram"></i>
         </span>
@@ -288,7 +214,7 @@
     </li>
     <li>
       <a href="#" class="group relative block overflow-hidden rounded-xl" aria-label="مشاهده پست در اینستاگرام">
-        <img src="images/m-3.jpeg" alt="" class="aspect-square w-full object-cover object-top transition duration-500 group-hover:scale-110 sm:aspect-[4/3] lg:aspect-[3/2]">
+        <img src="images/m-3.jpeg" alt="" class="aspect-square w-full object-cover object-top transition duration-500 group-hover:scale-110 sm:aspect-4/3 lg:aspect-3/2">
         <span class="absolute inset-0 grid place-items-center bg-wine/60 text-2xl text-white opacity-0 transition duration-300 group-hover:opacity-100">
           <i class="fa-brands fa-instagram"></i>
         </span>
@@ -296,7 +222,7 @@
     </li>
     <li>
       <a href="#" class="group relative block overflow-hidden rounded-xl" aria-label="مشاهده پست در اینستاگرام">
-        <img src="images/m-4.jpeg" alt="" class="aspect-square w-full object-cover object-top transition duration-500 group-hover:scale-110 sm:aspect-[4/3] lg:aspect-[3/2]">
+        <img src="images/m-4.jpeg" alt="" class="aspect-square w-full object-cover object-top transition duration-500 group-hover:scale-110 sm:aspect-4/3 lg:aspect-3/2">
         <span class="absolute inset-0 grid place-items-center bg-wine/60 text-2xl text-white opacity-0 transition duration-300 group-hover:opacity-100">
           <i class="fa-brands fa-instagram"></i>
         </span>
@@ -304,7 +230,7 @@
     </li>
     <li>
       <a href="#" class="group relative block overflow-hidden rounded-xl" aria-label="مشاهده پست در اینستاگرام">
-        <img src="images/m-5.jpeg" alt="" class="aspect-square w-full object-cover object-top transition duration-500 group-hover:scale-110 sm:aspect-[4/3] lg:aspect-[3/2]">
+        <img src="images/m-5.jpeg" alt="" class="aspect-square w-full object-cover object-top transition duration-500 group-hover:scale-110 sm:aspect-4/3 lg:aspect-3/2">
         <span class="absolute inset-0 grid place-items-center bg-wine/60 text-2xl text-white opacity-0 transition duration-300 group-hover:opacity-100">
           <i class="fa-brands fa-instagram"></i>
         </span>

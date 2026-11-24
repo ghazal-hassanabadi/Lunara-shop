@@ -63,7 +63,7 @@ export function initSlider() {
     stopAutoPlay();
     timer = setInterval(() => {
       showSlide((current + 1) % slides.length);
-    }, 2000);
+    }, 3000);
   }
 
   dots.forEach((dot, i) => {
