@@ -65,28 +65,27 @@
   <main class="mx-auto max-w-7xl space-y-10 px-4 pb-10 lg:px-6">
 
 <!-- اسلایدر اصلی -->
-<section aria-label="معرفی مجموعه" class="relative isolate flex aspect-[4/3] items-center justify-center overflow-hidden rounded-3xl bg-sand sm:aspect-auto sm:min-h-80 sm:justify-start lg:min-h-120">
-  <img src="images/hero.png" alt="مدل با بافت زرشکی"
+<section data-slider aria-label="معرفی مجموعه" class="relative isolate flex aspect-[4/3] items-center justify-center overflow-hidden rounded-3xl bg-sand sm:aspect-auto sm:min-h-80 sm:justify-start lg:min-h-120">
+  <img data-slide-image src="images/hero.png" alt="مدل با بافت زرشکی"
   class="absolute inset-0 -z-10 size-full object-cover object-[38%_center] opacity-25 sm:object-left sm:opacity-100">
 
   <hgroup class="flex w-full flex-col items-center gap-1.5 p-4 text-center sm:w-3/5 sm:items-start sm:gap-3 sm:p-10 sm:text-start lg:w-1/2 lg:ps-0 lg:pe-16 xl:mr-30">
-    <p class="text-sm font-medium">کالکشن جدید پاییز و زمستان</p>
-    <h1 class="text-2xl font-extrabold text-wine sm:text-4xl">استایل خاص، در هر فصل</h1>
-    <p class="text-sm">با لباس‌هایی که حس بهتری بهت میدن.</p>
+    <p data-slide-subtitle class="text-sm font-medium">کالکشن جدید پاییز و زمستان</p>
+    <h1 data-slide-title class="text-2xl font-extrabold text-wine sm:text-4xl">استایل خاص، در هر فصل</h1>
+    <p data-slide-text class="text-sm">با لباس‌هایی که حس بهتری بهت میدن.</p>
     <a href="#products"
-      class="mt-1 inline-flex items-center gap-2 rounded-full bg-wine px-5 py-2 text-sm font-medium text-white hover:bg-ink hover:shadow-lg active:scale-95 sm:mt-3 sm:px-7 sm:py-3">
-      <i class="fa-solid fa-arrow-right"></i>
-      مشاهده محصولات
+       class="mt-2 inline-flex items-center gap-2 rounded-full bg-wine px-6 py-2.5 text-sm font-medium text-white shadow-md transition hover:bg-ink hover:shadow-lg active:scale-95">
+       <i class="fa-solid fa-arrow-right"></i>
+       مشاهده محصولات
     </a>
   </hgroup>
 
   <ul class="absolute bottom-4 start-1/2 hidden -translate-x-1/2 gap-3 sm:bottom-5 sm:flex" aria-label="اسلایدها">
-    <li><button type="button" class="size-3 rounded-full bg-wine hover:bg-ink" aria-label="اسلاید ۱"></button></li>
-    <li><button type="button" class="size-3 rounded-full border border-wine hover:bg-wine" aria-label="اسلاید ۲"></button></li>
-    <li><button type="button" class="size-3 rounded-full border border-wine hover:bg-wine" aria-label="اسلاید ۳"></button></li>
+    <li><button type="button" data-slide-dot class="size-3 rounded-full border border-wine bg-wine hover:bg-ink" aria-label="اسلاید ۱"></button></li>
+    <li><button type="button" data-slide-dot class="size-3 rounded-full border border-wine hover:bg-wine" aria-label="اسلاید ۲"></button></li>
+    <li><button type="button" data-slide-dot class="size-3 rounded-full border border-wine hover:bg-wine" aria-label="اسلاید ۳"></button></li>
   </ul>
 </section>
-
 
     
  <!-- دسته‌بندی‌ها -->

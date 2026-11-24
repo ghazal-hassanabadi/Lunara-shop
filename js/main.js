@@ -1,3 +1,4 @@
+import { initSlider } from "./slider.js";
 import { initCart } from "./cart.js";
 import { initSearch } from "./search.js";
 import { products } from "./products.js";
@@ -10,5 +11,7 @@ if (list) {
   renderProducts(list, products.slice(0, limit));
 }
 
+
+initSlider();
 initSearch();
 initCart();
