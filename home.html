@@ -135,7 +135,7 @@
     </a>
   </header>
 
-  <ul class="grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-5">
+  <ul id="products-list" data-limit="4" class=" grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-5">
 
   <!-- بنر تخفیف -->
   <li class="relative isolate col-span-2 flex min-h-56 flex-col items-center justify-center gap-3 overflow-hidden rounded-2xl bg-wine p-6 text-center text-white lg:col-span-1 lg:min-h-72">
@@ -147,93 +147,7 @@
     </a>
   </li>
 
-  <li>
-    <article class="group relative flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm hover:-translate-y-1 hover:shadow-lg" data-id="1">
-      <figure class="relative overflow-hidden">
-        <img src="images/m-8.jpeg" alt="سیوشرت سفید" class="aspect-[3/4] w-full object-cover transition duration-300 group-hover:scale-105">
-        <button type="button" class="absolute start-2 top-2 text-lg hover:text-wine sm:start-3 sm:top-3 sm:text-xl" aria-label="افزودن به علاقه‌مندی">
-          <i class="fa-regular fa-heart"></i>
-        </button>
-        <figcaption class="absolute end-2 top-2 rounded-full bg-wine px-2 py-0.5 text-[10px] font-bold text-white sm:end-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">۲۰٪</figcaption>
-      </figure>
-      <header class="space-y-2 p-3 sm:p-4">
-        <h3 class="text-xs font-medium group-hover:text-wine sm:text-sm">سیوشرت سفید</h3>
-        <p class="flex flex-wrap items-center gap-x-2 text-xs sm:text-sm">
-          <strong class="text-wine"><data value="1999000">۱,۹۹۹,۰۰۰</data> تومان</strong>
-          <del class="text-[10px] text-ink/50 sm:text-xs">۲,۴۹۹,۰۰۰</del>
-        </p>
-      </header>
-      <footer class="mt-auto p-3 pt-0 sm:p-4 sm:pt-0">
-        <button type="button" data-add-to-cart class="w-full rounded-full bg-wine py-2 text-xs font-medium text-white hover:bg-ink active:scale-95 sm:text-sm">افزودن به سبد خرید</button>
-      </footer>
-    </article>
-  </li>
 
-  <li>
-    <article class="group relative flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm hover:-translate-y-1 hover:shadow-lg" data-id="2">
-      <figure class="relative overflow-hidden">
-        <img src="images/m-3.jpeg" alt="ژیله کرمی" class="aspect-[3/4] w-full object-cover transition duration-300 group-hover:scale-105">
-        <button type="button" class="absolute start-2 top-2 text-lg hover:text-wine sm:start-3 sm:top-3 sm:text-xl" aria-label="افزودن به علاقه‌مندی">
-          <i class="fa-regular fa-heart"></i>
-        </button>
-        <figcaption class="absolute end-2 top-2 rounded-full bg-wine px-2 py-0.5 text-[10px] font-bold text-white sm:end-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">۲۰٪</figcaption>
-      </figure>
-      <header class="space-y-2 p-3 sm:p-4">
-        <h3 class="text-xs font-medium group-hover:text-wine sm:text-sm">ژیله کرمی</h3>
-        <p class="flex flex-wrap items-center gap-x-2 text-xs sm:text-sm">
-          <strong class="text-wine"><data value="1199000">۱,۱۹۹,۰۰۰</data> تومان</strong>
-          <del class="text-[10px] text-ink/50 sm:text-xs">۱,۴۹۹,۰۰۰</del>
-        </p>
-      </header>
-      <footer class="mt-auto p-3 pt-0 sm:p-4 sm:pt-0">
-        <button type="button" data-add-to-cart class="w-full rounded-full bg-wine py-2 text-xs font-medium text-white hover:bg-ink active:scale-95 sm:text-sm">افزودن به سبد خرید</button>
-      </footer>
-    </article>
-  </li>
-
-  <li>
-    <article class="group relative flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm hover:-translate-y-1 hover:shadow-lg" data-id="3">
-      <figure class="relative overflow-hidden">
-        <img src="images/m-4.jpeg" alt="شلوار پارچه‌ای" class="aspect-[3/4] w-full object-cover transition duration-300 group-hover:scale-105">
-        <button type="button" class="absolute start-2 top-2 text-lg hover:text-wine sm:start-3 sm:top-3 sm:text-xl" aria-label="افزودن به علاقه‌مندی">
-          <i class="fa-regular fa-heart"></i>
-        </button>
-        <figcaption class="absolute end-2 top-2 rounded-full bg-wine px-2 py-0.5 text-[10px] font-bold text-white sm:end-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">۱۵٪</figcaption>
-      </figure>
-      <header class="space-y-2 p-3 sm:p-4">
-        <h3 class="text-xs font-medium group-hover:text-wine sm:text-sm">شلوار پارچه‌ای</h3>
-        <p class="flex flex-wrap items-center gap-x-2 text-xs sm:text-sm">
-          <strong class="text-wine"><data value="1499000">۱,۴۹۹,۰۰۰</data> تومان</strong>
-          <del class="text-[10px] text-ink/50 sm:text-xs">۱,۷۹۹,۰۰۰</del>
-        </p>
-      </header>
-      <footer class="mt-auto p-3 pt-0 sm:p-4 sm:pt-0">
-        <button type="button" data-add-to-cart class="w-full rounded-full bg-wine py-2 text-xs font-medium text-white hover:bg-ink active:scale-95 sm:text-sm">افزودن به سبد خرید</button>
-      </footer>
-    </article>
-  </li>
-
-  <li>
-    <article class="group relative flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm hover:-translate-y-1 hover:shadow-lg" data-id="4">
-      <figure class="relative overflow-hidden">
-        <img src="images/m-5.jpeg" alt="دورس سرمه‌ای" class="aspect-[3/4] w-full object-cover transition duration-300 group-hover:scale-105">
-        <button type="button" class="absolute start-2 top-2 text-lg hover:text-wine sm:start-3 sm:top-3 sm:text-xl" aria-label="افزودن به علاقه‌مندی">
-          <i class="fa-regular fa-heart"></i>
-        </button>
-        <figcaption class="absolute end-2 top-2 rounded-full bg-wine px-2 py-0.5 text-[10px] font-bold text-white sm:end-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">۲۰٪</figcaption>
-      </figure>
-      <header class="space-y-2 p-3 sm:p-4">
-        <h3 class="text-xs font-medium group-hover:text-wine sm:text-sm">دورس سرمه‌ای</h3>
-        <p class="flex flex-wrap items-center gap-x-2 text-xs sm:text-sm">
-          <strong class="text-wine"><data value="1999000">۱,۹۹۹,۰۰۰</data> تومان</strong>
-          <del class="text-[10px] text-ink/50 sm:text-xs">۲,۴۹۹,۰۰۰</del>
-        </p>
-      </header>
-      <footer class="mt-auto p-3 pt-0 sm:p-4 sm:pt-0">
-        <button type="button" data-add-to-cart class="w-full rounded-full bg-wine py-2 text-xs font-medium text-white hover:bg-ink active:scale-95 sm:text-sm">افزودن به سبد خرید</button>
-      </footer>
-    </article>
-  </li>
 </ul>
 </section>
 
