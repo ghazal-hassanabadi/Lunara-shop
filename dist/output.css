@@ -226,6 +226,9 @@
   .inset-y-0 {
     inset-block: 0px;
   }
+  .inset-s-2 {
+    inset-inline-start: calc(var(--spacing) * 2);
+  }
   .start-1 {
     inset-inline-start: calc(var(--spacing) * 1);
   }
@@ -245,6 +248,9 @@
     inset-inline-end: calc(var(--spacing) * 0);
   }
   .end-2 {
+    inset-inline-end: calc(var(--spacing) * 2);
+  }
+  .inset-e-2 {
     inset-inline-end: calc(var(--spacing) * 2);
   }
   .-top-2 {
@@ -360,6 +366,9 @@
   }
   .table {
     display: table;
+  }
+  .aspect-3\/4 {
+    aspect-ratio: 3/4;
   }
   .aspect-\[3\/4\] {
     aspect-ratio: 3/4;
@@ -1188,10 +1197,16 @@
     scale: var(--tw-scale-x) var(--tw-scale-y);
   }
   @media (width >= 40rem) {
+    .sm\:inset-s-3 {
+      inset-inline-start: calc(var(--spacing) * 3);
+    }
     .sm\:start-3 {
       inset-inline-start: calc(var(--spacing) * 3);
     }
     .sm\:end-3 {
+      inset-inline-end: calc(var(--spacing) * 3);
+    }
+    .sm\:inset-e-3 {
       inset-inline-end: calc(var(--spacing) * 3);
     }
     .sm\:top-3 {

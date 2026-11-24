@@ -1,4 +1,5 @@
 import { initCart } from "./cart.js";
+import { initSearch } from "./search.js";
 import { products } from "./products.js";
 import { renderProducts } from "./render.js";
 
@@ -9,4 +10,5 @@ if (list) {
   renderProducts(list, products.slice(0, limit));
 }
 
+initSearch();
 initCart();

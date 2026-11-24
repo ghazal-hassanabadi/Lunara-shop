@@ -7,11 +7,11 @@ function createCard(p) {
   <li data-product-item>
     <article class="group relative flex h-full flex-col overflow-hidden rounded-2xl bg-white shadow-sm hover:-translate-y-1 hover:shadow-lg" data-id="${p.id}" data-category="${p.category}">
       <figure class="relative overflow-hidden">
-        <img src="${p.image}" alt="${p.name}" class="aspect-[3/4] w-full object-cover transition duration-300 group-hover:scale-105">
-        <button type="button" class="absolute start-2 top-2 text-lg hover:text-wine sm:start-3 sm:top-3 sm:text-xl" aria-label="افزودن به علاقه‌مندی">
+        <img src="${p.image}" alt="${p.name}" class="aspect-3/4 w-full object-cover transition duration-300 group-hover:scale-105">
+        <button type="button" class="absolute inset-s-2 top-2 text-lg hover:text-wine sm:inset-s-3 sm:top-3 sm:text-xl" aria-label="افزودن به علاقه‌مندی">
           <i class="fa-regular fa-heart"></i>
         </button>
-        ${hasDiscount ? `<figcaption class="absolute end-2 top-2 rounded-full bg-wine px-2 py-0.5 text-[10px] font-bold text-white sm:end-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">${p.discount.toLocaleString("fa-IR")}٪</figcaption>` : ""}
+        ${hasDiscount ? `<figcaption class="absolute inset-e-2 top-2 rounded-full bg-wine px-2 py-0.5 text-[10px] font-bold text-white sm:inset-e-3 sm:top-3 sm:px-3 sm:py-1 sm:text-xs">${p.discount.toLocaleString("fa-IR")}٪</figcaption>` : ""}
       </figure>
       <header class="space-y-2 p-3 sm:p-4">
         <h3 class="text-xs font-medium group-hover:text-wine sm:text-sm">${p.name}</h3>
