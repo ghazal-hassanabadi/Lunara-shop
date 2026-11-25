@@ -15,29 +15,27 @@
 <body class="bg-cream font-sans text-ink">
 
   <!-- نوار اعلان -->
-  <aside class="flex items-center justify-center gap-3 bg-wine px-4 py-2 text-xs text-white sm:text-sm">
-    <i class="fa-solid fa-truck-fast"></i>
+  <aside class="flex items-center justify-center gap-3 bg-ink px-4 py-2 text-xs text-sand sm:text-sm">
+    <i class="fa-solid fa-truck-fast text-brass"></i>
     <p>ارسال به سراسر ایران<span class="hidden sm:inline"> | خرید بالای ۱ میلیون تومان، رایگان</span></p>
   </aside>
 
   <!-- هدر -->
-  <header class="mx-auto flex max-w-7xl flex-wrap items-center gap-x-6 gap-y-3 px-4 py-4 lg:px-6">
-    <a href="index.html" class="font-display text-4xl leading-none text-wine hover:text-ink" aria-label="Lunara">
+  <header class="mx-auto flex max-w-7xl flex-wrap items-center gap-x-6 gap-y-3 px-4 py-5 lg:px-6">
+    <a href="index.html" class="font-display text-5xl font-medium leading-none text-wine hover:text-ink" aria-label="Lunara">
       Lunara
-      <small class="block text-[10px] tracking-widest text-ink">FASHION FOR YOU</small>
+      <small class="mt-1 block text-[10px] tracking-widest text-ink/70">FASHION FOR YOU</small>
     </a>
 
-
-
-   <button type="button" id="menu-toggle" class="ms-auto text-2xl hover:text-wine lg:hidden"
-     aria-label="باز کردن منو" aria-controls="main-nav" aria-expanded="false">
-     <i class="fa-solid fa-bars"></i>
-   </button>
+    <button type="button" id="menu-toggle" class="ms-auto text-2xl hover:text-wine lg:hidden"
+      aria-label="باز کردن منو" aria-controls="main-nav" aria-expanded="false">
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
     <nav id="main-nav" class="order-last hidden w-full lg:order-0 lg:block lg:w-auto" aria-label="منوی اصلی">
-      <ul class="flex flex-col gap-3 text-sm font-medium lg:flex-row lg:items-center lg:gap-6">
-        <li><a href="index.html" class="hover:text-wine">صفحه اصلی </a></li>
-        <li><a href="product.html" class="border-b-2 border-wine pb-1 text-wine hover:text-ink" aria-current="page">محصولات</a></li>
+      <ul class="flex flex-col gap-3 text-sm font-medium lg:flex-row lg:items-center lg:gap-7">
+        <li><a href="index.html" class="hover:text-wine">صفحه اصلی</a></li>
+        <li><a href="product.html" class="border-b-2 border-brass pb-1 text-wine hover:text-ink" aria-current="page">محصولات</a></li>
         <li><a href="#" class="hover:text-wine">درباره ما</a></li>
         <li><a href="#" class="hover:text-wine">تماس با ما</a></li>
       </ul>
@@ -46,8 +44,8 @@
     <form role="search" class="group relative order-last w-full lg:order-0 lg:ms-auto lg:w-72">
       <label for="search" class="sr-only">جستجو در محصولات</label>
       <input id="search" type="search" placeholder="جستجو در محصولات..."
-        class="w-full rounded-xl bg-sand/60 py-2.5 pe-4 ps-11 text-sm placeholder:text-ink/50 hover:bg-sand focus:bg-white focus:outline-2 focus:outline-wine">
-      <button type="submit" class="absolute inset-s-3 top-1/2 -translate-y-1/2 hover:text-wine" aria-label="جستجو">
+        class="w-full rounded-full border border-ink/15 bg-white/50 py-2.5 pe-4 ps-11 text-sm placeholder:text-ink/50 hover:border-brass focus:bg-white focus:outline-2 focus:outline-wine">
+      <button type="submit" class="absolute inset-s-4 top-1/2 -translate-y-1/2 hover:text-wine" aria-label="جستجو">
         <i class="fa-solid fa-magnifying-glass"></i>
       </button>
     </form>
@@ -56,18 +54,19 @@
       <li><a href="#" class="hover:text-wine" aria-label="حساب کاربری"><i class="fa-regular fa-user"></i></a></li>
       <li><a href="#" class="hover:text-wine" aria-label="علاقه‌مندی‌ها"><i class="fa-regular fa-heart"></i></a></li>
       <li>
-       <button type="button" id="cart-open" class="relative hover:text-wine" aria-label="سبد خرید" aria-haspopup="dialog">
-         <i class="fa-solid fa-bag-shopping"></i>
-         <span id="cart-count" class="absolute -inset-e-2 -top-2 grid size-4 place-items-center rounded-full bg-wine text-[10px] text-white">0</span>
-       </button>
+        <button type="button" id="cart-open" class="relative hover:text-wine" aria-label="سبد خرید" aria-haspopup="dialog">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span id="cart-count"
+            class="absolute -inset-e-2 -top-2 grid size-4 place-items-center rounded-full bg-wine text-[10px] text-white">0</span>
+        </button>
       </li>
     </ul>
   </header>
 
-  <main class="mx-auto max-w-7xl space-y-6 px-4 pb-12 lg:px-6">
+  <main class="mx-auto max-w-7xl space-y-8 px-4 pb-12 lg:px-6">
 
     <!-- عنوان صفحه -->
-    <header class="space-y-2">
+    <header class="space-y-3 border-b border-brass/50 pb-5">
       <nav aria-label="مسیر صفحه" class="text-xs text-ink/70">
         <ol class="flex items-center gap-2">
           <li><a href="index.html" class="hover:text-wine">صفحه اصلی</a></li>
@@ -75,10 +74,10 @@
           <li aria-current="page" class="text-wine">فروشگاه</li>
         </ol>
       </nav>
-      <h1 class="text-2xl font-extrabold text-wine">همه محصولات</h1>
+      <h1 class="text-3xl font-extrabold text-wine">همه محصولات</h1>
     </header>
 
-    <section class="grid gap-6 lg:grid-cols-[16rem_1fr] lg:items-start">
+    <section class="grid gap-8 lg:grid-cols-[16rem_1fr] lg:items-start">
 
       <!-- دکمه باز کردن فیلتر در گوشی -->
       <button type="button" id="filter-toggle" aria-controls="filters" aria-expanded="false"
@@ -88,10 +87,10 @@
       </button>
 
       <!-- فیلتر سمت راست -->
-      <aside id="filters" aria-label="فیلتر محصولات" class="hidden rounded-2xl bg-white p-5 shadow-sm lg:sticky lg:top-4 lg:block">
+      <aside id="filters" aria-label="فیلتر محصولات" class="hidden rounded-t-[2rem] rounded-b-xl border border-brass/50 bg-white/60 p-6 lg:sticky lg:top-4 lg:block">
         <form id="filter-form" class="space-y-6">
 
-          <header class="flex items-center justify-between">
+          <header class="flex items-center justify-between border-b border-ink/10 pb-3">
             <h2 class="font-extrabold">فیلترها</h2>
             <button type="reset" class="text-xs text-wine hover:text-ink">پاک کردن همه</button>
           </header>
@@ -120,10 +119,10 @@
             <section class="grid grid-cols-2 gap-2">
               <label class="sr-only" for="price-min">حداقل قیمت</label>
               <input id="price-min" name="min" type="text" inputmode="numeric" autocomplete="off" placeholder="از"
-                class="w-full rounded-xl bg-sand/60 px-3 py-2 text-sm placeholder:text-ink/50 hover:bg-sand focus:bg-white focus:outline-2 focus:outline-wine">
+                class="w-full rounded-full border border-ink/15 bg-white/50 px-4 py-2 text-sm placeholder:text-ink/50 hover:border-brass focus:bg-white focus:outline-2 focus:outline-wine">
               <label class="sr-only" for="price-max">حداکثر قیمت</label>
               <input id="price-max" name="max" type="text" inputmode="numeric" autocomplete="off" placeholder="تا"
-                class="w-full rounded-xl bg-sand/60 px-3 py-2 text-sm placeholder:text-ink/50 hover:bg-sand focus:bg-white focus:outline-2 focus:outline-wine">
+                class="w-full rounded-full border border-ink/15 bg-white/50 px-4 py-2 text-sm placeholder:text-ink/50 hover:border-brass focus:bg-white focus:outline-2 focus:outline-wine">
             </section>
           </fieldset>
 
@@ -135,7 +134,7 @@
             </label>
           </fieldset>
 
-          <button type="submit" class="w-full rounded-full bg-wine py-2.5 text-sm font-medium text-white hover:bg-ink active:scale-95">
+          <button type="submit" class="w-full rounded-full bg-wine py-2.5 text-sm font-medium text-white ring-1 ring-brass ring-offset-2 ring-offset-cream hover:bg-ink active:scale-95">
             اعمال فیلتر
           </button>
         </form>
@@ -144,9 +143,7 @@
       <!-- محصولات -->
       <section aria-label="لیست محصولات" class="space-y-5">
 
-
-
-       <ul id="products-list" class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 xl:grid-cols-4"></ul>
+        <ul id="products-list" class="grid grid-cols-2 gap-x-3 gap-y-8 sm:grid-cols-3 sm:gap-x-4 xl:grid-cols-4"></ul>
 
         <!-- پیام وقتی نتیجه‌ای پیدا نشد -->
         <p id="empty-message" role="status" class="hidden py-16 text-center text-sm text-ink/70">
@@ -154,24 +151,23 @@
           محصولی با این مشخصات پیدا نشد.
         </p>
 
-
       </section>
     </section>
   </main>
 
   <!-- فوتر -->
-  <footer class="bg-wine text-white">
-    <section class="mx-auto grid max-w-7xl gap-8 px-6 py-10 sm:grid-cols-2 lg:grid-cols-4">
+  <footer class="border-t-4 border-brass bg-wine text-white">
+    <section class="mx-auto grid max-w-7xl gap-8 px-6 py-12 sm:grid-cols-2 lg:grid-cols-4">
       <header>
-        <a href="index.html" class="font-display text-4xl leading-none hover:opacity-80" aria-label="Lunara">
+        <a href="index.html" class="font-display text-5xl font-medium leading-none hover:opacity-80" aria-label="Lunara">
           Lunara
-          <small class="block text-[10px] tracking-widest">FASHION FOR YOU</small>
+          <small class="mt-1 block text-[10px] tracking-widest">FASHION FOR YOU</small>
         </a>
         <p class="mt-4 text-sm text-white/80"><i class="fa-regular fa-heart"></i> همیشه شیک، همیشه خاص</p>
       </header>
 
       <nav aria-labelledby="f-links">
-        <h2 id="f-links" class="mb-3 font-bold">لینک‌های مفید</h2>
+        <h2 id="f-links" class="mb-3 border-b border-white/20 pb-2 font-bold">لینک‌های مفید</h2>
         <ul class="space-y-2 text-sm text-white/80">
           <li><a href="index.html" class="hover:text-white hover:underline">صفحه اصلی</a></li>
           <li><a href="product.html" class="hover:text-white hover:underline">فروشگاه</a></li>
@@ -180,7 +176,7 @@
       </nav>
 
       <nav aria-labelledby="f-service">
-        <h2 id="f-service" class="mb-3 font-bold">خدمات مشتریان</h2>
+        <h2 id="f-service" class="mb-3 border-b border-white/20 pb-2 font-bold">خدمات مشتریان</h2>
         <ul class="space-y-2 text-sm text-white/80">
           <li><a href="#" class="hover:text-white hover:underline">راهنمای خرید</a></li>
           <li><a href="#" class="hover:text-white hover:underline">سوالات متداول</a></li>
@@ -189,11 +185,10 @@
       </nav>
 
       <nav aria-labelledby="f-contact">
-        <h2 id="f-contact" class="mb-3 font-bold">راه‌های ارتباطی</h2>
+        <h2 id="f-contact" class="mb-3 border-b border-white/20 pb-2 font-bold">راه‌های ارتباطی</h2>
         <ul class="flex gap-4 text-xl">
-          <li><a href="#" class="hover:-translate-y-0.5 hover:text-sand" aria-label="اینستاگرام"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="#" class="hover:-translate-y-0.5 hover:text-sand" aria-label="تلگرام"><i class="fa-brands fa-telegram"></i></a></li>
-
+          <li><a href="#" class="hover:-translate-y-0.5 hover:text-brass" aria-label="اینستاگرام"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="#" class="hover:-translate-y-0.5 hover:text-brass" aria-label="تلگرام"><i class="fa-brands fa-telegram"></i></a></li>
         </ul>
       </nav>
     </section>
@@ -203,41 +198,40 @@
     </small>
   </footer>
 
-
   <dialog id="cart-drawer" aria-labelledby="cart-title"
-  class="fixed inset-y-0 left-0 right-auto m-0 h-dvh max-h-none w-[90%] max-w-sm -translate-x-full flex-col overflow-hidden rounded-r-2xl bg-cream p-0 text-ink shadow-2xl transition-transform duration-300 open:flex open:translate-x-0 starting:open:-translate-x-full backdrop:bg-ink/50">
+    class="fixed inset-y-0 left-0 right-auto m-0 h-dvh max-h-none w-[90%] max-w-sm -translate-x-full flex-col overflow-hidden rounded-r-2xl bg-cream p-0 text-ink shadow-2xl transition-transform duration-300 open:flex open:translate-x-0 starting:open:-translate-x-full backdrop:bg-ink/50">
 
-  <header class="flex items-center justify-between border-b border-ink/10 p-4">
-    <h2 id="cart-title" class="text-lg font-extrabold text-wine">سبد خرید</h2>
-    <form method="dialog">
-      <button type="submit" id="cart-close" class="text-xl hover:text-wine" aria-label="بستن سبد خرید">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-    </form>
-  </header>
+    <header class="flex items-center justify-between border-b border-brass/40 p-4">
+      <h2 id="cart-title" class="text-lg font-extrabold text-wine">سبد خرید</h2>
+      <form method="dialog">
+        <button type="submit" id="cart-close" class="text-xl hover:text-wine" aria-label="بستن سبد خرید">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </form>
+    </header>
 
-  <section class="flex-1 overflow-y-auto p-4" aria-label="محصولات سبد">
-    <ul id="cart-items" class="space-y-4"></ul>
+    <section class="flex-1 overflow-y-auto p-4" aria-label="محصولات سبد">
+      <ul id="cart-items" class="space-y-4"></ul>
 
-   <p id="cart-empty" role="status" class="hidden py-16 text-center text-sm text-ink/70">
-     <i class="fa-solid fa-bag-shopping mb-3 block text-3xl"></i>
-     سبد خرید شما خالی است.
-   </p>
-  </section>
+      <p id="cart-empty" role="status" class="hidden py-16 text-center text-sm text-ink/70">
+        <i class="fa-solid fa-bag-shopping mb-3 block text-3xl"></i>
+        سبد خرید شما خالی است.
+      </p>
+    </section>
 
-  <footer id="cart-footer" class="hidden space-y-3 border-t border-ink/10 bg-white p-4">
-    <p class="flex items-center justify-between font-bold" aria-live="polite">
-      <span>مجموع</span>
-      <strong class="text-wine"><data id="cart-total" value="0">۰</data> تومان</strong>
-    </p>
-    <p id="cart-shipping" class="text-xs text-ink/70"></p>
-    <form method="dialog">
-      <button type="submit" class="w-full rounded-full bg-wine py-2.5 text-sm font-medium text-white hover:bg-ink active:scale-95">
-        ادامه‌ی خرید
-      </button>
-    </form>
-  </footer>
-</dialog>
+    <footer id="cart-footer" class="hidden space-y-3 border-t border-brass/40 bg-white p-4">
+      <p class="flex items-center justify-between font-bold" aria-live="polite">
+        <span>مجموع</span>
+        <strong class="text-wine"><data id="cart-total" value="0">۰</data> تومان</strong>
+      </p>
+      <p id="cart-shipping" class="text-xs text-ink/70"></p>
+      <form method="dialog">
+        <button type="submit" class="w-full rounded-full bg-wine py-2.5 text-sm font-medium text-white hover:bg-ink active:scale-95">
+          ادامه‌ی خرید
+        </button>
+      </form>
+    </footer>
+  </dialog>
 
   <script src="./js/main.js" type="module"></script>
 </body>

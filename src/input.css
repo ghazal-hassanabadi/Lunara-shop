@@ -1,11 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cream: #F7F1EB;
-  --color-wine: #641E2A;
-  --color-ink: #302321;
-  --color-sand: #DED1C7;
-}
-@theme {
   --font-sans: "Vazirmatn", sans-serif;
+  --font-display: "Cormorant Garamond", serif;
+
+  --color-cream: #F6EFEF;
+  --color-sand: #E9D7D6;
+  --color-wine: #5A1526;
+  --color-ink: #24171A;
+
+  --color-brass: #B08D57;
 }
