@@ -22,15 +22,20 @@
 
   <!-- هدر -->
   <header class="mx-auto flex max-w-7xl flex-wrap items-center gap-x-6 gap-y-3 px-4 py-4 lg:px-6">
-    <a href="#" class="font-display text-4xl leading-none text-wine hover:text-ink" aria-label="Lunara">
+    <a href="index.html" class="font-display text-4xl leading-none text-wine hover:text-ink" aria-label="Lunara">
       Lunara
       <small class="block text-[10px] tracking-widest text-ink">FASHION FOR YOU</small>
     </a>
+   <button type="button" id="cart-open" class="relative hover:text-wine" aria-label="سبد خرید" aria-haspopup="dialog">
+     <i class="fa-solid fa-bag-shopping"></i>
+     <span id="cart-count" class="absolute -inset-e-2 -top-2 grid size-4 place-items-center rounded-full bg-wine text-[10px] text-white">0</span>
+   </button>
 
-<button type="button" id="menu-toggle" class="ms-auto text-2xl hover:text-wine lg:hidden"
-  aria-label="باز کردن منو" aria-controls="main-nav" aria-expanded="false">
-  <i class="fa-solid fa-bars"></i>
-</button>
+
+   <button type="button" id="menu-toggle" class="ms-auto text-2xl hover:text-wine lg:hidden"
+     aria-label="باز کردن منو" aria-controls="main-nav" aria-expanded="false">
+     <i class="fa-solid fa-bars"></i>
+   </button>
 
     <nav id="main-nav" class="order-last hidden w-full lg:order-0 lg:block lg:w-auto" aria-label="منوی اصلی">
       <ul class="flex flex-col gap-3 text-sm font-medium lg:flex-row lg:items-center lg:gap-6">
@@ -117,10 +122,10 @@
             <legend class="mb-3 text-sm font-bold">محدوده قیمت (تومان)</legend>
             <section class="grid grid-cols-2 gap-2">
               <label class="sr-only" for="price-min">حداقل قیمت</label>
-              <input id="price-min" name="min" type="number" min="0" step="50000" placeholder="از"
+              <input id="price-min" name="min" type="text" inputmode="numeric" autocomplete="off" placeholder="از"
                 class="w-full rounded-xl bg-sand/60 px-3 py-2 text-sm placeholder:text-ink/50 hover:bg-sand focus:bg-white focus:outline-2 focus:outline-wine">
               <label class="sr-only" for="price-max">حداکثر قیمت</label>
-              <input id="price-max" name="max" type="number" min="0" step="50000" placeholder="تا"
+              <input id="price-max" name="max" type="text" inputmode="numeric" autocomplete="off" placeholder="تا"
                 class="w-full rounded-xl bg-sand/60 px-3 py-2 text-sm placeholder:text-ink/50 hover:bg-sand focus:bg-white focus:outline-2 focus:outline-wine">
             </section>
           </fieldset>
@@ -147,7 +152,7 @@
        <ul id="products-list" class="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 xl:grid-cols-4"></ul>
 
         <!-- پیام وقتی نتیجه‌ای پیدا نشد -->
-        <p id="empty-message" class="hidden py-16 text-center text-sm text-ink/70">
+        <p id="empty-message" role="status" class="hidden py-16 text-center text-sm text-ink/70">
           <i class="fa-regular fa-face-frown mb-3 block text-3xl"></i>
           محصولی با این مشخصات پیدا نشد.
         </p>
@@ -217,7 +222,7 @@
   <section class="flex-1 overflow-y-auto p-4" aria-label="محصولات سبد">
     <ul id="cart-items" class="space-y-4"></ul>
 
-    <p id="cart-empty" class="hidden py-16 text-center text-sm text-ink/70">
+    <p id="empty-message" role="status" class="hidden py-16 text-center text-sm text-ink/70">
       <i class="fa-solid fa-bag-shopping mb-3 block text-3xl"></i>
       سبد خرید شما خالی است.
     </p>
