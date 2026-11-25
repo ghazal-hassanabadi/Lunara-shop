@@ -1,3 +1,4 @@
+import { initFilter } from "./filter.js";
 import { initMenu } from "./menu.js";
 import { initSlider } from "./slider.js";
 import { initCart } from "./cart.js";
@@ -19,5 +20,6 @@ if (list) {
 initMenu();
 initSlider();
 initSearch();
+initFilter();
 initCart();
 initCartDrawer();
