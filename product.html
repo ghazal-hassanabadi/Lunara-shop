@@ -26,10 +26,7 @@
       Lunara
       <small class="block text-[10px] tracking-widest text-ink">FASHION FOR YOU</small>
     </a>
-   <button type="button" id="cart-open" class="relative hover:text-wine" aria-label="سبد خرید" aria-haspopup="dialog">
-     <i class="fa-solid fa-bag-shopping"></i>
-     <span id="cart-count" class="absolute -inset-e-2 -top-2 grid size-4 place-items-center rounded-full bg-wine text-[10px] text-white">0</span>
-   </button>
+
 
 
    <button type="button" id="menu-toggle" class="ms-auto text-2xl hover:text-wine lg:hidden"
@@ -222,10 +219,10 @@
   <section class="flex-1 overflow-y-auto p-4" aria-label="محصولات سبد">
     <ul id="cart-items" class="space-y-4"></ul>
 
-    <p id="empty-message" role="status" class="hidden py-16 text-center text-sm text-ink/70">
-      <i class="fa-solid fa-bag-shopping mb-3 block text-3xl"></i>
-      سبد خرید شما خالی است.
-    </p>
+   <p id="cart-empty" role="status" class="hidden py-16 text-center text-sm text-ink/70">
+     <i class="fa-solid fa-bag-shopping mb-3 block text-3xl"></i>
+     سبد خرید شما خالی است.
+   </p>
   </section>
 
   <footer id="cart-footer" class="hidden space-y-3 border-t border-ink/10 bg-white p-4">
