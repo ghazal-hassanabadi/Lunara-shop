@@ -8,7 +8,13 @@ function createCard(p) {
   <li data-product-item class="min-[600px]:w-[180px] min-[600px]:shrink-0 min-[600px]:snap-start lg:w-auto">
     <article class="group relative flex h-full flex-col overflow-hidden rounded-xl bg-white shadow-sm hover:-translate-y-1 hover:shadow-lg" data-id="${p.id}" data-category="${p.category}">
       <figure class="relative overflow-hidden">
-        <img src="${p.image}" alt="${p.name}" class="aspect-3/4 w-full object-cover transition duration-300 group-hover:scale-105">
+        <img
+  src="${p.image}"
+  alt="${p.name}"
+  loading="lazy"
+  decoding="async"
+  class="aspect-3/4 w-full object-cover transition duration-300 group-hover:scale-105"
+>
         <button type="button" class="absolute inset-s-2 top-2 text-base hover:text-wine sm:inset-s-3 sm:top-3 sm:text-lg" aria-label="افزودن به علاقه‌مندی">
           <i class="fa-regular fa-heart"></i>
         </button>

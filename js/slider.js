@@ -1,20 +1,20 @@
 const slides = [
   {
-    image: "images/hero.png",
+    image: "images/hero-1.webp",
     alt: "مدل با بافت زرشکی",
     subtitle: "کالکشن جدید پاییز و زمستان",
     title: "استایل خاص، در هر فصل",
     text: "با لباس‌هایی که حس بهتری بهت میدن.",
   },
   {
-    image: "images/hero-2.jpeg",
+    image: "images/hero-2.webp",
     alt: "کالکشن زمستانه",
     subtitle: "تخفیف ویژه زمستانه",
     title: "تا ۳۰٪ تخفیف",
     text: "گرم بمان و شیک بمان.",
   },
   {
-    image: "images/hero-3.jpeg",
+    image: "images/hero-3.webp",
     alt: "کالکشن جدید",
     subtitle: "رسیدن محصولات جدید",
     title: "تازه‌ترین استایل‌ها",
@@ -22,10 +22,7 @@ const slides = [
   },
 ];
 
-slides.forEach((slide) => {
-  const img = new Image();
-  img.src = slide.image;
-});
+
 
 export function initSlider() {
   const hero = document.querySelector("[data-slider]");

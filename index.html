@@ -27,11 +27,12 @@
        <small class="block text-[10px] tracking-widest text-ink">FASHION FOR YOU</small>
     </a>
 
-    <button type="button" class="ms-auto text-2xl hover:text-wine lg:hidden" aria-label="باز کردن منو">
-      <i class="fa-solid fa-bars"></i>
-    </button>
+<button type="button" id="menu-toggle" class="ms-auto text-2xl hover:text-wine lg:hidden"
+  aria-label="باز کردن منو" aria-controls="main-nav" aria-expanded="false">
+  <i class="fa-solid fa-bars"></i>
+</button>
 
-    <nav class="order-last hidden w-full lg:order-0 lg:block lg:w-auto" aria-label="منوی اصلی">
+    <nav id="main-nav" class="order-last hidden w-full lg:order-0 lg:block lg:w-auto" aria-label="منوی اصلی">
       <ul class="flex flex-col gap-3 text-sm font-medium lg:flex-row lg:items-center lg:gap-6">
         <li><a href="index.html" class="border-b-2 border-wine pb-1 text-wine hover:text-ink" aria-current="page">صفحه اصلی</a></li>
         <li><a href="product.html" class="hover:text-wine">محصولات</a></li>
@@ -53,11 +54,11 @@
       <li><a href="#" class="hover:text-wine" aria-label="حساب کاربری"><i class="fa-regular fa-user"></i></a></li>
       <li><a href="#" class="hover:text-wine" aria-label="علاقه‌مندی‌ها"><i class="fa-regular fa-heart"></i></a></li>
       <li>
-        <a href="#" class="relative hover:text-wine" aria-label="سبد خرید">
+        <button type="button" id="cart-open" class="relative hover:text-wine" aria-label="سبد خرید" aria-haspopup="dialog">
           <i class="fa-solid fa-bag-shopping"></i>
           <span id="cart-count"
             class="absolute -inset-e-2 -top-2 grid size-4 place-items-center rounded-full bg-wine text-[10px] text-white">0</span>
-        </a>
+        </button>
       </li>
     </ul>
   </header>
@@ -66,8 +67,14 @@
 
 <!-- اسلایدر اصلی -->
 <section data-slider aria-label="معرفی مجموعه" class="relative isolate flex aspect-4/3 items-center justify-center overflow-hidden rounded-3xl bg-sand sm:aspect-auto sm:min-h-80 sm:justify-start lg:min-h-120">
-  <img data-slide-image src="images/hero.png" alt="مدل با بافت زرشکی"
-  class="absolute inset-0 -z-10 size-full object-cover object-[38%_center] opacity-25 sm:object-left sm:opacity-100">
+  <img
+  data-slide-image
+  src="images/hero.png"
+  alt="مدل با بافت زرشکی"
+  fetchpriority="high"
+  decoding="async"
+  class="absolute inset-0 -z-10 size-full object-cover object-[38%_center] opacity-25 sm:object-left sm:opacity-100"
+>
 
   <hgroup class="flex w-full flex-col items-center gap-1.5 p-4 text-center sm:w-3/5 sm:items-start sm:gap-3 sm:p-10 sm:text-start lg:w-1/2 lg:ps-0 lg:pe-16 xl:mr-30">
     <p data-slide-subtitle class="text-sm font-medium">کالکشن جدید پاییز و زمستان</p>
@@ -94,31 +101,31 @@
   <ul class="mx-auto grid max-w-md grid-cols-2 gap-4 md:max-w-none md:grid-cols-5 md:gap-6 lg:gap-10">
     <li>
       <a href="#" class="group flex aspect-3/4 w-full flex-col items-center gap-2 rounded-t-full rounded-b-3xl bg-sand px-3 pb-4 pt-12 text-sm font-bold transition duration-500 ease-out hover:-translate-y-1 hover:bg-wine hover:text-white hover:shadow-lg lg:pt-16 lg:text-base">
-        <img src="images/c-3.png" alt="" class="min-h-0 w-full flex-1 object-contain transition duration-500 group-hover:scale-105">
+        <img src="images/c-3.webp" alt="" class="min-h-0 w-full flex-1 object-contain transition duration-500 group-hover:scale-105">
         پالتو
       </a>
     </li>
     <li class="hidden md:block">
       <a href="#" class="group flex aspect-3/4 w-full flex-col items-center gap-2 rounded-t-full rounded-b-3xl bg-sand px-3 pb-4 pt-12 text-sm font-bold transition duration-500 ease-out hover:-translate-y-1 hover:bg-wine hover:text-white hover:shadow-lg lg:pt-16 lg:text-base">
-        <img src="images/c-5.png" alt="" class="min-h-0 w-full flex-1 object-contain transition duration-500 group-hover:scale-105">
+        <img src="images/c-5.webp" alt="" class="min-h-0 w-full flex-1 object-contain transition duration-500 group-hover:scale-105">
         بارانی
       </a>
     </li>
     <li>
       <a href="#" class="group flex aspect-3/4 w-full flex-col items-center gap-2 rounded-t-full rounded-b-3xl bg-sand px-3 pb-4 pt-12 text-sm font-bold transition duration-500 ease-out hover:-translate-y-1 hover:bg-wine hover:text-white hover:shadow-lg lg:pt-16 lg:text-base">
-        <img src="images/c-2.png" alt="" class="min-h-0 w-full flex-1 object-contain transition duration-500 group-hover:scale-105">
+        <img src="images/c-2.webp" alt="" class="min-h-0 w-full flex-1 object-contain transition duration-500 group-hover:scale-105">
         هودی
       </a>
     </li>
     <li>
       <a href="#" class="group flex aspect-3/4 w-full flex-col items-center gap-2 rounded-t-full rounded-b-3xl bg-sand px-3 pb-4 pt-12 text-sm font-bold transition duration-500 ease-out hover:-translate-y-1 hover:bg-wine hover:text-white hover:shadow-lg lg:pt-16 lg:text-base">
-        <img src="images/c-1.png" alt="" class="min-h-0 w-full flex-1 object-contain transition duration-500 group-hover:scale-105">
+        <img src="images/c-1.webp" alt="" class="min-h-0 w-full flex-1 object-contain transition duration-500 group-hover:scale-105">
         بافت
       </a>
     </li>
     <li>
       <a href="#" class="group flex aspect-3/4 w-full flex-col items-center gap-2 rounded-t-full rounded-b-3xl bg-sand px-3 pb-4 pt-12 text-sm font-bold transition duration-500 ease-out hover:-translate-y-1 hover:bg-wine hover:text-white hover:shadow-lg lg:pt-16 lg:text-base">
-        <img src="images/c-4.png" alt="" class="min-h-0 w-full flex-1 object-contain transition duration-500 group-hover:scale-105">
+        <img src="images/c-4.webp" alt="" class="min-h-0 w-full flex-1 object-contain transition duration-500 group-hover:scale-105">
         شلوار
       </a>
     </li>
@@ -213,7 +220,7 @@
   <ul class="grid grid-cols-4 gap-2 sm:gap-3">
     <li>
       <a href="#" class="group relative block overflow-hidden rounded-xl" aria-label="مشاهده پست در اینستاگرام">
-        <img src="images/m-8.jpeg" alt="" class="aspect-square w-full object-cover object-top transition duration-500 group-hover:scale-110 sm:aspect-4/3 lg:aspect-3/2">
+        <img src="images/m-8.webp" alt="" class="aspect-square w-full object-cover object-top transition duration-500 group-hover:scale-110 sm:aspect-4/3 lg:aspect-3/2">
         <span class="absolute inset-0 grid place-items-center bg-wine/60 text-2xl text-white opacity-0 transition duration-300 group-hover:opacity-100">
           <i class="fa-brands fa-instagram"></i>
         </span>
@@ -221,7 +228,7 @@
     </li>
     <li>
       <a href="#" class="group relative block overflow-hidden rounded-xl" aria-label="مشاهده پست در اینستاگرام">
-        <img src="images/m-3.jpeg" alt="" class="aspect-square w-full object-cover object-top transition duration-500 group-hover:scale-110 sm:aspect-4/3 lg:aspect-3/2">
+        <img src="images/m-3.webp" alt="" class="aspect-square w-full object-cover object-top transition duration-500 group-hover:scale-110 sm:aspect-4/3 lg:aspect-3/2">
         <span class="absolute inset-0 grid place-items-center bg-wine/60 text-2xl text-white opacity-0 transition duration-300 group-hover:opacity-100">
           <i class="fa-brands fa-instagram"></i>
         </span>
@@ -229,7 +236,7 @@
     </li>
     <li>
       <a href="#" class="group relative block overflow-hidden rounded-xl" aria-label="مشاهده پست در اینستاگرام">
-        <img src="images/m-4.jpeg" alt="" class="aspect-square w-full object-cover object-top transition duration-500 group-hover:scale-110 sm:aspect-4/3 lg:aspect-3/2">
+        <img src="images/m-4.webp" alt="" class="aspect-square w-full object-cover object-top transition duration-500 group-hover:scale-110 sm:aspect-4/3 lg:aspect-3/2">
         <span class="absolute inset-0 grid place-items-center bg-wine/60 text-2xl text-white opacity-0 transition duration-300 group-hover:opacity-100">
           <i class="fa-brands fa-instagram"></i>
         </span>
@@ -237,7 +244,7 @@
     </li>
     <li>
       <a href="#" class="group relative block overflow-hidden rounded-xl" aria-label="مشاهده پست در اینستاگرام">
-        <img src="images/m-5.jpeg" alt="" class="aspect-square w-full object-cover object-top transition duration-500 group-hover:scale-110 sm:aspect-4/3 lg:aspect-3/2">
+        <img src="images/m-5.webp" alt="" class="aspect-square w-full object-cover object-top transition duration-500 group-hover:scale-110 sm:aspect-4/3 lg:aspect-3/2">
         <span class="absolute inset-0 grid place-items-center bg-wine/60 text-2xl text-white opacity-0 transition duration-300 group-hover:opacity-100">
           <i class="fa-brands fa-instagram"></i>
         </span>
@@ -289,6 +296,42 @@
     © 2025 Lunara. All rights reserved.
   </small>
 </footer>
+
+
+<dialog id="cart-drawer" aria-labelledby="cart-title"
+  class="fixed inset-y-0 left-0 right-auto m-0 h-dvh max-h-none w-[90%] max-w-sm -translate-x-full flex-col overflow-hidden rounded-r-2xl bg-cream p-0 text-ink shadow-2xl transition-transform duration-300 open:flex open:translate-x-0 starting:open:-translate-x-full backdrop:bg-ink/50">
+
+  <header class="flex items-center justify-between border-b border-ink/10 p-4">
+    <h2 id="cart-title" class="text-lg font-extrabold text-wine">سبد خرید</h2>
+    <form method="dialog">
+      <button type="submit" id="cart-close" class="text-xl hover:text-wine" aria-label="بستن سبد خرید">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </form>
+  </header>
+
+  <section class="flex-1 overflow-y-auto p-4" aria-label="محصولات سبد">
+    <ul id="cart-items" class="space-y-4"></ul>
+
+    <p id="cart-empty" class="hidden py-16 text-center text-sm text-ink/70">
+      <i class="fa-solid fa-bag-shopping mb-3 block text-3xl"></i>
+      سبد خرید شما خالی است.
+    </p>
+  </section>
+
+  <footer id="cart-footer" class="hidden space-y-3 border-t border-ink/10 bg-white p-4">
+    <p class="flex items-center justify-between font-bold" aria-live="polite">
+      <span>مجموع</span>
+      <strong class="text-wine"><data id="cart-total" value="0">۰</data> تومان</strong>
+    </p>
+    <p id="cart-shipping" class="text-xs text-ink/70"></p>
+    <form method="dialog">
+      <button type="submit" class="w-full rounded-full bg-wine py-2.5 text-sm font-medium text-white hover:bg-ink active:scale-95">
+        ادامه‌ی خرید
+      </button>
+    </form>
+  </footer>
+</dialog>
 
   <script src="./js/main.js" type="module"></script>
 </body>

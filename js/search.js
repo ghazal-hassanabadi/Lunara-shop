@@ -1,5 +1,6 @@
 import { products } from "./products.js";
 import { renderProducts } from "./render.js";
+import { debounce } from "./debounce.js";
 
 export function initSearch() {
   const input = document.querySelector("#search");
@@ -26,11 +27,15 @@ export function initSearch() {
       window.location.href = q
         ? `product.html?q=${encodeURIComponent(q)}`
         : "product.html";
+    } else {
+      showResults(input.value);
     }
   });
 
   if (isShopPage) {
-    input.addEventListener("input", () => showResults(input.value));
+    const debouncedShow = debounce(showResults, 300);
+
+    input.addEventListener("input", () => debouncedShow(input.value));
 
     const q = new URLSearchParams(window.location.search).get("q");
     if (q) {
