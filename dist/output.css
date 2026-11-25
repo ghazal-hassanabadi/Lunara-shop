@@ -426,6 +426,12 @@
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
+  .mb-15 {
+    margin-bottom: calc(var(--spacing) * 15);
+  }
+  .mb-25 {
+    margin-bottom: calc(var(--spacing) * 25);
+  }
   .mb-30 {
     margin-bottom: calc(var(--spacing) * 30);
   }
@@ -446,6 +452,9 @@
   }
   .table {
     display: table;
+  }
+  .aspect-2\/1 {
+    aspect-ratio: 2/1;
   }
   .aspect-3\/4 {
     aspect-ratio: 3/4;
@@ -925,6 +934,9 @@
   .bg-\[\#4A2C24\] {
     background-color: #4A2C24;
   }
+  .bg-\[\#D9BCA6\] {
+    background-color: #D9BCA6;
+  }
   .bg-\[\#EFE3D3\] {
     background-color: #EFE3D3;
   }
@@ -1026,6 +1038,9 @@
   }
   .object-\[38\%_center\] {
     object-position: 38% center;
+  }
+  .object-\[78\%_center\] {
+    object-position: 78% center;
   }
   .object-top {
     object-position: top;
@@ -1644,11 +1659,17 @@
     }
   }
   @media (width >= 40rem) {
+    .sm\:absolute {
+      position: absolute;
+    }
     .sm\:inset-s-3 {
       inset-inline-start: calc(var(--spacing) * 3);
     }
     .sm\:inset-e-3 {
       inset-inline-end: calc(var(--spacing) * 3);
+    }
+    .sm\:top-1\/2 {
+      top: calc(1 / 2 * 100%);
     }
     .sm\:top-28 {
       top: calc(var(--spacing) * 28);
@@ -1659,6 +1680,9 @@
     .sm\:bottom-5 {
       bottom: calc(var(--spacing) * 5);
     }
+    .sm\:left-\[6\%\] {
+      left: 6%;
+    }
     .sm\:block {
       display: block;
     }
@@ -1667,6 +1691,9 @@
     }
     .sm\:inline {
       display: inline;
+    }
+    .sm\:aspect-4\/1 {
+      aspect-ratio: 4/1;
     }
     .sm\:aspect-4\/3 {
       aspect-ratio: 4/3;
@@ -1701,6 +1728,13 @@
     .sm\:w-72 {
       width: calc(var(--spacing) * 72);
     }
+    .sm\:w-\[36\%\] {
+      width: 36%;
+    }
+    .sm\:-translate-y-1\/2 {
+      --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
     .sm\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -1733,6 +1767,9 @@
     }
     .sm\:object-left {
       object-position: left;
+    }
+    .sm\:p-0 {
+      padding: 0px;
     }
     .sm\:p-6 {
       padding: calc(var(--spacing) * 6);
@@ -1982,6 +2019,10 @@
     .lg\:text-3xl {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+    .lg\:text-4xl {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
     }
     .lg\:text-base {
       font-size: var(--text-base);
